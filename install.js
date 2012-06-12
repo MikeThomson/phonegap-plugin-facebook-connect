@@ -54,10 +54,10 @@ if (platform == 'android') {
   shell("cp -r native/android/ " + appDir);
 
   // Copy ConnectPlugin JS into app dir
-  shell("cp www/pg-plugin-fb-connect.js " + appDir + "assets/www");
+  shell("cp www/cdv-plugin-fb-connect.js " + appDir + "assets/www");
 
   // Copy example index in.
-  shell("cp example/www/index.html " + appDir + "assets/www");
+  //shell("cp example/www/index.html " + appDir + "assets/www");
 
   // Remind user to edit AndroidManifest.xml with their App Secret.
   console.log('In your app please make sure to properly include your Facebook application ID when you call "FB.init"!');

@@ -51,7 +51,7 @@ if (platform == 'android') {
   shell("cp -rf lib/facebook-android-sdk/facebook/res " + appDir);
 
   // Copy native ConnectPlugin source into app dir
-  shell("cp -r native/android/ " + appDir);
+  shell("cp -r native/android/* " + appDir);
 
   // Copy ConnectPlugin JS into app dir
   shell("cp www/cdv-plugin-fb-connect.js " + appDir + "assets/www");

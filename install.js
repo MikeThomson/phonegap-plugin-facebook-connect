@@ -38,7 +38,7 @@ if (platform == 'android') {
   // Add connect plugin to plugins.xml
   var pluginsFile = appDir + 'res/xml/plugins.xml';
   var pluginsXml = fs.readFileSync(pluginsFile).toString();
-  pluginsXml = pluginsXml.replace(/<\/plugins>/gi,'<plugin name="com.phonegap.facebook.Connect" value="com.phonegap.facebook.ConnectPlugin" /></plugins>'); 
+  pluginsXml = pluginsXml.replace(/<\/plugins>/gi,'<plugin name="org.apache.cordova.facebook.Connect" value="org.apache.cordova.facebook.ConnectPlugin" /></plugins>'); 
   fs.writeFileSync(pluginsFile, pluginsXml);
 
   // Generate and patch the facebook-js, then copy it into the
